@@ -15,8 +15,8 @@ Now it's time to practice the Grid tools we've learned and create a layout that 
 ### Self Check
 
 - The gap is 15px
-- The grid has two columns
-- The grid has four rows
+- The grid has two columns : 2 horizontal tracks -> 1 - 3 horizontal grid  lines 
+- The grid has four rows : 4 vertical tracks -> 1 - 5 vertical grid lines
 - The second column is three times larger than the first
 - The third row is five times larger than the others
 - The header and footer elements span across both columns
