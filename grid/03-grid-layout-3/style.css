@@ -5,6 +5,9 @@
 
 .container {
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 4px;
 }
 
 .container div {
@@ -16,11 +19,32 @@
 }
 
 .header {
+  /* Header spans across the whole column */
+  grid-column: 1 / 3;
+
+  /* Create a grid with two cols inside the container */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   background-color: #393f4d;
 }
 
+.logo{
+  display: grid;
+  /* align the column to the start */
+  justify-content: start;
+}
+
+.menu > ul {
+  /* create grid for the menu */
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: space-between;
+} 
+
 .menu ul,
 .menu li {
+  /* remove dot points */
+  list-style-type: none;
   font-size: 16px;
 }
 
@@ -82,6 +106,7 @@
 }
 
 .footer {
+  grid-column: 1 / 3;
   background-color: #393f4d;
 }
 
